@@ -1,0 +1,52 @@
+# {{.ProjectName}} Constitution
+
+**Version**: 1.0.0
+**Ratified**: {{.CurrentDate}}
+**Last Amended**: {{.CurrentDate}}
+
+## Core Principles
+
+### I. Code Quality
+**MUST** write clean, maintainable, and well-documented code. Code reviews are mandatory before merging.
+
+### II. Testing
+**MUST** write tests for all critical functionality. Aim for high test coverage without gaming metrics.
+
+### III. Security
+**MUST** follow security best practices. Never commit secrets. Validate all inputs.
+
+### IV. Documentation
+**MUST** document all public APIs and complex logic. Keep documentation up-to-date with code changes.
+
+### V. Performance
+**SHOULD** consider performance implications. Optimize hot paths. Profile before optimizing.
+
+## {{.AppKind}}-Specific Guidelines
+
+{{if eq .AppKind "CLI"}}### CLI Best Practices
+- Provide helpful error messages
+- Support --help flag for all commands
+- Follow POSIX conventions for flags
+- Exit with appropriate exit codes
+{{else if eq .AppKind "web"}}### Web Application Best Practices
+- Implement proper error handling
+- Use HTTPS in production
+- Validate and sanitize all inputs
+- Implement rate limiting
+{{else}}### Service Best Practices
+- Implement health checks
+- Log structured data
+- Handle graceful shutdown
+- Monitor resource usage
+{{end}}
+
+## Technology Standards
+
+- **Language**: {{.Language}}
+{{if .Framework}}- **Framework**: {{.Framework}}
+{{end}}{{if .TestFramework}}- **Testing Framework**: {{.TestFramework}}
+{{end}}- **Branching**: {{.BranchStrategy}}
+
+## Governance
+
+Changes to this constitution require team review and approval. Document all amendments with rationale.

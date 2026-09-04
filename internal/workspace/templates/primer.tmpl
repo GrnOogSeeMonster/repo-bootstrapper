@@ -1,0 +1,118 @@
+# {{.ProjectName}} Development Primer
+
+**AI Agent**: {{.AgentChoice}}
+**Created**: {{.CurrentDate}}
+
+## Quick Start for AI Development
+
+This project was bootstrapped and is ready for AI-assisted development. Follow these steps in order.
+
+## Step 1: Review Constitution
+
+Open and read `docs/constitution.md` to understand the project principles and guidelines.
+
+```
+Run: /constitution
+Paste: contents of docs/constitution.md
+```
+
+## Step 2: Review Specification
+
+Open and read `docs/spec.md` to understand what needs to be built.
+
+```
+Run: /specify
+Paste: contents of docs/spec.md
+```
+
+## Step 3: Clarify Ambiguities
+
+Identify any unclear requirements and resolve them.
+
+```
+Run: /clarify
+```
+
+The agent will ask questions about any ambiguous parts of the spec. Answer them to complete the specification.
+
+## Step 4: Review Implementation Plan
+
+Open and read `docs/plan.md` to understand the technical approach.
+
+```
+Run: /plan
+Paste: contents of docs/plan.md
+```
+
+## Step 5: Generate Tasks
+
+Generate a detailed task breakdown.
+
+```
+Run: /tasks
+```
+
+This will populate `docs/tasks.md` with numbered, ordered tasks.
+
+## Step 6: Implement
+
+Execute the tasks and build the application.
+
+```
+Run: /implement
+```
+
+The agent will work through each task systematically, following TDD principles.
+
+## Project Setup
+
+### Required Tools
+
+- **{{.Language}}**: Language runtime
+{{if .PackageManager}}- **{{.PackageManager}}**: Package management
+{{end}}{{if .TestFramework}}- **{{.TestFramework}}**: Testing framework
+{{end}}- **Git**: Version control
+
+### Success Criteria
+
+✓ All tests pass
+✓ Code builds without errors
+✓ Documentation is complete
+✓ Follows constitutional principles
+
+## Development Workflow
+
+1. Work on feature branches
+2. Write tests before implementation (TDD)
+3. Run tests frequently
+4. Commit with clear messages
+5. Create PR when ready
+
+### Branching
+
+Follow: {{.BranchStrategy}}
+
+## Tips for AI Agent
+
+- Always read the constitution before starting
+- Follow TDD: tests first, then implementation
+- Ask for clarification if requirements are unclear
+- Check constitutional compliance throughout
+- Run tests after each significant change
+
+## Common Commands
+
+```bash
+# Run tests
+[your test command]
+
+# Build
+[your build command]
+
+# Lint
+[your lint command]
+```
+
+## Next Steps
+
+Start with Step 1 and work through each step in order. Good luck!

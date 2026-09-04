@@ -1,0 +1,35 @@
+# {{.ProjectName}}
+
+A {{.AppKind}} application built with {{.Language}}{{if .Framework}} using {{.Framework}}{{end}}.
+
+## Description
+
+This project was bootstrapped using repo-bootstrapper and is ready for AI-assisted development with {{.AgentChoice}}.
+
+## Getting Started
+
+See `prompts/primer.md` for instructions on how to continue development with your AI coding agent.
+
+## Tech Stack
+
+- **Language**: {{.Language}}
+{{if .Framework}}- **Framework**: {{.Framework}}
+{{end}}{{if .PackageManager}}- **Package Manager**: {{.PackageManager}}
+{{end}}{{if .TestFramework}}- **Testing**: {{.TestFramework}}
+{{end}}- **Target Platform**: {{.TargetOS}}
+
+## Documentation
+
+- `docs/constitution.md` - Project principles and guidelines
+- `docs/spec.md` - Feature specifications
+- `docs/plan.md` - Implementation plan
+- `docs/tasks.md` - Task breakdown
+- `prompts/primer.md` - AI agent workflow guide
+
+## Development
+
+Follow the branching strategy: {{.BranchStrategy}}
+
+## License
+
+{{.License}}

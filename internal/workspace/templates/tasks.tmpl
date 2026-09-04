@@ -1,0 +1,36 @@
+# Tasks: {{.ProjectName}}
+
+**Created**: {{.CurrentDate}}
+**Status**: Pending
+
+## Task Breakdown
+
+This file will be populated by running `/tasks` command after the specification and plan are complete.
+
+### Instructions for AI Agent
+
+1. Review `docs/spec.md` for requirements
+2. Review `docs/plan.md` for technical approach
+3. Generate detailed, numbered tasks
+4. Mark tasks that can run in parallel with [P]
+5. Include exact file paths in each task
+6. Order tasks by dependencies
+
+### Task Format
+
+```
+- [ ] T001 [P] Description with exact file path
+- [ ] T002 Description that depends on T001
+```
+
+## Phases
+
+- **Setup**: Project initialization
+- **Tests**: Write tests first (TDD)
+- **Implementation**: Core functionality
+- **Integration**: Wire components together
+- **Polish**: Documentation, cleanup
+
+## Next Command
+
+Run the `/tasks` slash command to auto-generate tasks from the spec and plan.
